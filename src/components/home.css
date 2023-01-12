@@ -3,7 +3,9 @@
     justify-content: space-around;
     align-items: center;
     margin: 4rem 0;
+    flex-wrap: wrap;
 }
 .paragraphone{
     width: 40%;
+    margin: 1rem 0;
 }

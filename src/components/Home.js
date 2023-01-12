@@ -3,7 +3,6 @@ import './home.css'
 
 const Home = () => {
   return (
-    <div>
         <div className='homepage'>
             <div className='paragraphone'>
                 <p>
@@ -17,7 +16,6 @@ const Home = () => {
              <img src="https://cdn.myanimelist.net/images/anime/2/29550.jpg" alt="img"  />
             </div>
         </div>
-    </div>
   )
 }
 
