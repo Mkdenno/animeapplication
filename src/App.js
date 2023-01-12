@@ -6,7 +6,7 @@ import Movies from "./components/Movies";
 
 
 function App() {
-  const [movies, setMovies]=useState()
+  const [movies, setMovies]=useState([])
   const movieOptions = {
     method: 'GET',
     headers: {
