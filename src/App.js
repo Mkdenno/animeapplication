@@ -6,18 +6,18 @@ import Movies from "./components/Movies";
 
 
 function App() {
-  const [movies, setMovies]=useState(null)
+  const [movies, setMovies]=useState()
   const movieOptions = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '5970fc4886msh928284f8d99bbbfp184ca1jsn8771bf837182',
+        'X-RapidAPI-Key': 'dc78779a39mshb82d92679ac254dp10cf89jsn130914269d42',
         'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
     }
 }; 
 useEffect(()=>{
     fetch('https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=Fullmetal&genres=Fantasy%2CDrama&sortBy=ranking&sortOrder=asc', movieOptions)
     .then(res => res.json())
-    .then(data => console.log(data.data))
+    .then(data => setMovies(data.data))
 },[])
 
   return (
@@ -25,7 +25,7 @@ useEffect(()=>{
       <Navbar/>
       <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/movies" element={<Movies/>}/>
+      <Route path="/movies" element={<Movies movies={movies}/>}/>
       {/* <Route path="/about" element={<About/>}/> */}
       </Routes>
     </div>
