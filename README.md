@@ -1,7 +1,6 @@
 # ANIME APPLICATION
 ## Project Description
-This is a restaurant application menu list, It shows a list of dishes that are available for sale in the restaurant or the food that can be served. It can also show the guest dishes availablefor sale along with a short description of each item.
-
+Complete anime data. Ranking, synopsis, genre, search by title. Over 20k data updated everyday
 ## ScreenShot
 
 
