@@ -22,7 +22,6 @@
     color: red;
 }
 .image img{
-    width: 70%;
     border-radius: 10px;
 }
 .moreAnimes{
@@ -37,3 +36,43 @@
     display:grid;
     justify-content: center;
 }
+
+@media screen and (max-width: 740px) {
+    .homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin: 4.5rem 0;
+
+    }
+    .paragraphone{
+        width: 50%;
+        margin: .5rem;
+    }
+    
+    .paragraphone h1{
+        font-size: 2rem;
+    }
+    .paragraphone p{
+        font-size: 1.5rem;
+    }
+    .anime{
+        color: red;
+    }
+    .image img{
+        width: 50%;
+        border-radius: 10px;
+    }
+    .moreAnimes{
+        padding: .5rem 1.5rem;
+        background-color: red;
+        border-radius: .5rem;
+        margin: 1rem;
+    }
+
+    .image img{
+        width: 20%;
+        border-radius: 10px;
+    }
+  }

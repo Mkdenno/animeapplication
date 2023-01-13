@@ -8,7 +8,6 @@ const Footer = () => {
           <li>Home</li>
           <li>Animes</li>
           <li>About</li>
-          <li>Contact Us</li>
           </ul>
         </div>
   )
