@@ -1,0 +1,25 @@
+.headerabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.Aboutpages{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.para{
+    width:50%;
+}
+.para p{
+    font-size: 1.5rem;
+
+}
+.image img{
+    width: 100%;
+    }
+    .para h1{
+        font-size: 2rem;
+    }

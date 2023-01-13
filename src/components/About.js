@@ -1,25 +1,33 @@
-import React from 'react'
+import React from "react";
+import "./about.css";
 
 const About = () => {
   return (
-    <div className="homepage">
-      <div className="paragraphone">
-        <h1>
-          <span className="anime">Anime</span> Data
-        </h1>
-        <p>
-          Complete anime data. Ranking, synopsis, genre, search by title. Over
-          20k data updated everyday.
-        </p>
-        <button className="moreAnimes">See More</button>
-      </div>
-      <div className="image">
-        <img
-          src="https://images.unsplash.com/photo-1627012441283-79151a20adf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fDNkJTIwYW5pbWF0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          alt="img"
-        />
-      </div>
-    </div>  )
-}
+    <div>
+      <h1 className="headerabout">
+        <span className="anime">About</span> Us
+      </h1>
 
-export default About
+      <div className="Aboutpages">
+        <div className="para">
+          <p>
+            Anime is hand-drawn and computer-generated animation originating
+            from Japan. Outside of Japan and in English, anime refers
+            specifically to animation produced in Japan. However, in Japan and
+            in Japanese, anime describes all animated works, regardless of style
+            or origin
+          </p>
+        </div>
+        <div className="image">
+          <img
+            src="https://i.pinimg.com/236x/60/36/d9/6036d90eec846e5e94866a4a65119504.jpg"
+            alt="img"
+            width="500"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
