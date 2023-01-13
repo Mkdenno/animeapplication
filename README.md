@@ -3,6 +3,8 @@
 Complete anime data. Ranking, synopsis, genre, search by title. Over 20k data updated everyday
 ## ScreenShot
 
+![Screenshot from 2023-01-13 09-28-23](https://user-images.githubusercontent.com/104482846/212252617-b1c25628-8a4a-4d51-94dc-3e4df99439c5.png)
+![Screenshot from 2023-01-13 09-29-32](https://user-images.githubusercontent.com/104482846/212252736-4d0ff990-ccff-4a1a-bf11-54d72a6fbaf3.png)
 
 ## Technologies Used
 
