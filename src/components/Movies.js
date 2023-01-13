@@ -11,7 +11,7 @@ const Movies = () => {
   const movieOptions = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '5970fc4886msh928284f8d99bbbfp184ca1jsn8771bf837182',
+        'X-RapidAPI-Key': '0436188716mshe8486874eb19c10p1d01c3jsnf178209451e8',
         'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
     }
 }; 
