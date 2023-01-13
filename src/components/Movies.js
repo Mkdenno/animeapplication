@@ -19,12 +19,6 @@ useEffect(()=>{
     .then(data => setMovies(data.data))
 },[])
 
-  // const animelist=movies.map((movie) =>(
-  //   <AnimeList
-  //   key={movie.id}
-  //   movie={movie}
-  //   />
-  // ))
 
   
 

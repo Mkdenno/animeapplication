@@ -1,41 +1,57 @@
-import React from 'react'
+import React from "react";
 import "./home.css";
 
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { Box, Button, CardActionArea, CardActions, Grid } from "@mui/material";
 
-const AnimeList = ({movies}) => {
-  return (
-        
-    <div class=" w-full bg-gray-100 py-6 flex-wrap   sm:py-12">
-  
-  <div class=" grid grid-cols-2   py-3 ">
-    {
-      movies.map((movie) =>(
+const style = {
 
-        <div class="bg-white shadow-lg my-4 mx-10   border-gray-100 max-h-120	 border sm:rounded-3xl p-10 flex ">
-        <div class="h-38 overflow-visible w-1/2">
-            <img class=" rounded-3xl shadow-lg" src={movie.image} alt=""/>
-        </div>
-        <div class="flex flex-col w-1/2 space-y-4">
-          <div class="flex justify-between items-start">
-            <h2 class="text-1xl font-bold">{movie.title}</h2>
-          </div>
-          <div>
-            <div class="text-sm text-gray-400">Episodes:-{movie.episodes}</div>
-            <div class="text-lg text-gray-800">Rankings:{movie.ranking}</div>
-            <div class="text-lg text-gray-800">Type:{movie.type}</div>
-          </div>
-          <div class="flex text-2xl font-bold text-a"><button><a href={movie.link}>Play</a></button></div>
-        </div>
-  
-      </div>
-       ) )
-    }
-
-  </div>
-  
-  </div>
-
-  )
+  margin: '10%',
+  display: 'flex',
+  justifyContent: 'space-around',
+  flexWrap: 'wrap'
 }
 
-export default AnimeList
+const AnimeList = ({ movies }) => {
+  return (
+    <Box sx={style}>
+      {movies.map((movie) => (
+        <Card sx={{ width: 250, marginTop: '1rem'}}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height= "100"
+              image={movie.image}
+              alt="green iguana"
+              sx={{height: '150px'}}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h8" component="div">
+                {movie.title}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Episodes: {movie.episodes}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Rankings:{movie.ranking}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Type:{movie.type}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary" href={movie.link}>
+              Play
+            </Button>
+          </CardActions>
+        </Card>
+      ))}
+    </Box>
+  );
+};
+
+export default AnimeList;
