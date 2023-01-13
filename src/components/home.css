@@ -9,3 +9,31 @@
     width: 40%;
     margin: 1rem 0;
 }
+
+.paragraphone h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: -6rem;
+}
+.paragraphone p{
+    font-size: 2.5rem;
+}
+.anime{
+    color: red;
+}
+.image img{
+    width: 70%;
+    border-radius: 10px;
+}
+.moreAnimes{
+    padding: 1rem 3rem;
+    background-color: red;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+/* movielist */
+.movielist{
+    display:grid;
+    justify-content: center;
+}
